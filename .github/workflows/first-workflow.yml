@@ -8,10 +8,14 @@ jobs:
           uses: actions/checkout@v6 
           
         - name: Welcome message
-          run: echo "My first github workflow command"
+          run: |
+            echo "My first github workflow command"
+            ls
+            cat index.html
+            
+        - name: Install cowsay
+          run: sudo apt install cowsay -y
 
-        - name: List files
-          run: ls
-
-        - name: Show index.html
-          run: cat index.html
+        - name: Create Snake
+          run: cowsay -f snake " I am a Python. "
+          
