@@ -17,5 +17,8 @@ jobs:
           run: sudo apt install cowsay -y
 
         - name: Create Snake
-          run: cowsay -f snake " I am a Python. "
+          run: cowsay -f snake " I am a Python. " >> snake.txt
+
+        - name: Show snake
+          run: cat snake.txt
           
