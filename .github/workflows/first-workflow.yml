@@ -12,7 +12,7 @@ jobs:
 
         - name: Execute Shell Script
           run: |
-            chmod +X my-script.sh
+            chmod +x my-script.sh
             ./my-script.sh
           
           
