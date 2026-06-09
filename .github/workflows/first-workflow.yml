@@ -11,6 +11,8 @@ jobs:
           run: ls
 
         - name: Execute Shell Script
-          run: ./my-script.sh
+          run: |
+            chmod +X my-script.sh
+            ./my-script.sh
           
           
